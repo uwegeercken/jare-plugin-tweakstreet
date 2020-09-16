@@ -6,9 +6,7 @@ the code does not need to be touched. This enhances quality and also transparenc
 
 To manage your business logic there is a web application available at: https://github.com/uwegeercken/rule_maintenance_war. It requires a running MySQL or MariaDb instance. More detailed information is available here: https://github.com/uwegeercken/rule_maintenance_documentation
 
-You will need the [api jar](https://github.com/twineworks/tweakstreet-api) corresponding to your version of Tweakstreet. 
-
-To build the Tweakstreet plugin/step run `mvn package`
+To build the Tweakstreet plugin/step run `mvn package` - you will need the [api jar](https://github.com/twineworks/tweakstreet-api) corresponding to your version of Tweakstreet.
 
 This will create a folder `target/tweakstreet-plugin-jare-<version>`. Copy this folder to your `$HOME/.tweakstreet/plugins/` directory. 
 Restart tweakstreet and you can start using the contained steps.
