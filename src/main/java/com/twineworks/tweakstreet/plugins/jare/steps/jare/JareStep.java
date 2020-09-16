@@ -84,14 +84,10 @@ public final class JareStep extends BasePassThroughStep implements PassThroughSt
     Path path = s.rules.get(context.getFlowInfo().getFlowPath());
     File file = path.toFile();
 
-    // -----------------------------------------------
-    // Copied Uwe's code for setting up rule engine
-    // -----------------------------------------------
-
-    log.debug("trying to use file for the rule engine: {}", path);
+    log.debug("using rule engine file: {}", path);
 
     if (!file.exists()) {
-      throw new RuntimeException("the specified rule file was not found: " + path);
+      throw new RuntimeException("specified rule file not found: " + path);
     }
     // we can use a zip file containing all rules
     if (file.isFile() && file.getName().toLowerCase().endsWith(".zip")) {

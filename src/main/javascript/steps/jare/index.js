@@ -4,7 +4,7 @@ const extension = {
   id: ID,
   type: "step",
   stepType: "passthrough",
-  name: "JaRE Rules",
+  name: "JaRE - Java Rule Engine",
   category: "Utility",
   description: "Passes data through the Java Rule Engine - JaRE",
   icon: "steps/jare/icon.svg",
@@ -29,7 +29,7 @@ const extension = {
       id: "collectResults",
       type: "boolean",
       label: "Collect Result Details",
-      hoverHtml: "<p>If checked, the step collects details of the execution of each rule</p><p><i>Evaluated for each input row</i></p>",
+      hoverHtml: "<p>If checked, collects details of the execution of each rule</p><p><i>Evaluated for each input row</i></p>",
       value: false
     }
   ],
